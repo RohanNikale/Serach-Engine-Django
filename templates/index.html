@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="search-area">
+        <form method="GET" action="/">
+            <div class="logo">
+<h1>Gyan</h1>
+            </div>
+                <div class="searchbar">
+
+
+                    <input type="text" name="search" id="transcript" placeholder="Say Something" />
+                    <div class="speech">
+                    <img onclick="startDictation()" class="microphone"id="speech" src="https://i.imgur.com/cHidSVu.gif" />
+                </div>
+
+            </div>
+        </form>
+        <br>
+        <br>
+        <br>
+  
+
+        <div class="result">
+            <div class="info">
+                
+                <h1>{{title}}</h1>
+                <p>{{info}}</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        Copyright© 2022. All Rights Reserved By&nbsp;<a href="https://github.com/RohanNikale">Rohan Nikale</a>
+    </footer>
+    <script src="{%static 'js/js.js'%}"></script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+body{
+padding: 0;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+overflow-x: hidden;
+}
+a{
+    color: white;
+}
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    height: 200px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.search-area{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.searchbar input{
+    padding-left: 20px;
+    transition: 0.1s all;
+    width: 600px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.098);
+    border-radius: 15px;
+}
+.searchbar input:hover{
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.216);
+}
+.searchbar input:focus{
+    outline: none;
+}
+.searchbar{
+    display: flex;
+}
+.microphone{
+    margin: 0px 0 5px 10px;
+    background-color: rgba(6, 5, 5, 0.954);
+    border-radius: 50%;
+    position: absolute;
+
+}
+.activate{
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    margin: 0px 0 5px 10px;
+    animation: active  1s ease-in-out 1s infinite ;
+    transition: 1s ease-in-out 0s;
+
+}
+@keyframes active {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: black;
+    }
+    100%{
+        background-color: aqua;
+    }
+    
+}
+.result{
+width: 70%;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .searchbar input{
+
+        width: 450px;
+        height: 50px;
+
+    }
+    .search-area{
+        width: 100%;
+    }
+    .result{
+        width: 90%;
+        
+        }
+}
+
+@media (max-width: 602px) {
+    .searchbar input{
+
+        width: 370px;
+        height: 50px;
+
+    }
+    .search-area{
+        width: 100%;
+    }
+
+    .result{
+        width: 90%;
+        
+        }
+}
+@media (max-width: 602px) {
+    .searchbar input{
+
+        width: 80%;
+        height: 50px;
+
+    }
+}
+
+@media (max-width: 366px) {
+    .microphone{
+        margin: 0px 100px 0px 0px;
+        position: absolute;
+    }
+    .logo{
+        font-size: 3rem;
+
+
+    }
+    .searchbar input{
+        margin-left: -10px;
+        width: 90%;
+        height: 50px;
+
+    }
+}
+@media (max-width: 316px) {
+    .microphone{
+        margin: 0px 100px 0px 0px;
+        position: absolute;
+    }
+    .logo{
+        font-size: 3rem;
+
+
+    }
+    .searchbar input{
+        margin-left: -10px;
+        width: 80%;
+        height: 50px;
+
+    }
+}
